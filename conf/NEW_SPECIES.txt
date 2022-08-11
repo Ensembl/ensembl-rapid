@@ -6,3 +6,4 @@ felis_catus_gca018350175v1
 panthera_leo_gca018350195v1
 panthera_leo_gca018350215v1
 vitis_vinifera_gca910591555v1
+homo_sapiens_gca009914755v4
