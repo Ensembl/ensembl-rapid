@@ -3,13 +3,13 @@
         {
             "id": "gnomADg",
             "description": "Genome Aggregation Database genomes v3.1.2",
-            "species": "Homo_sapiens-HG01358.pri.mat.f1_v2.1",
-            "assembly": "GCA_018469865.1",
+            "species": "Homo_sapiens_GCA_018469865.1",
+            "assembly": "HG01358.pri.mat.f1_v2.1",
             "type": "local",
             "use_as_source": 1,
             "use_seq_region_synonyms": 0,
             "use_vcf_consequences": 1,
-            "filename_template": "/nfs/public/release/ensweb-data/data_files/rapid/homo_sapiens_gca018469865v1/GCA_018469865.1/variation/Homo_sapiens-HG01358.pri.mat.f1_v2.1-2022_10-gnomad.vcf.gz",
+            "filename_template": "/nfs/public/release/ensweb-data/data_files/rapid/homo_sapiens_gca018469865v1/HG01358.pri.mat.f1_v2.1/variation/Homo_sapiens-GCA_018469865.1-2022_10-gnomad.vcf.gz",
             "population_prefix": "gnomADg:",
             "population_display_group": {
                 "display_group_name": "gnomAD genomes v3.1.2",
@@ -66,13 +66,13 @@
         {
             "id": "ClinVar",
             "description": "ClinVar",
-            "species": "Homo_sapiens-HG01358.pri.mat.f1_v2.1",
-            "assembly": "GCA_018469865.1",
+            "species": "Homo_sapiens_GCA_018469865.1",
+            "assembly": "HG01358.pri.mat.f1_v2.1",
             "type": "local",
             "use_as_source": 1,
             "use_seq_region_synonyms": 0,
             "use_vcf_consequences": 1,
-            "filename_template": "/nfs/public/release/ensweb-data/data_files/rapid/homo_sapiens_gca018469865v1/GCA_018469865.1/variation/Homo_sapiens-HG01358.pri.mat.f1_v2.1-2022_10-clinvar.vcf.gz"
+            "filename_template": "/nfs/public/release/ensweb-data/data_files/rapid/homo_sapiens_gca018469865v1/HG01358.pri.mat.f1_v2.1/variation/Homo_sapiens-GCA_018469865.1-2022_10-clinvar.vcf.gz"
         }
     ]
 }
