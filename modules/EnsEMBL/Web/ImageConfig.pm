@@ -30,8 +30,7 @@ sub add_data_files {
     my $glyphset = $data->{$_}{'format'} || '_alignment';
 
     my $renderers;
-    if ($glyphset eq 'bamcov') {
-      ## Quick'n'dirty hack until db is updated
+    if ($glyphset eq 'bigwig' || $glyphset eq 'bamcov') {
       $renderers = [
                     'off',                  'Off',
                     'signal',               'Coverage (BigWig)',
