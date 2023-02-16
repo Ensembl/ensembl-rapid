@@ -25,6 +25,7 @@
       {"taxon": "other_arthropods", "label": "Other arthropods"}
     ]
   },
-  {"taxon": "Animalia", "label": "Other animals"},
-  {"taxon": "Viridiplantae", "label": "Plants"}
+  {"taxon": "Metazoa", "label": "Other animals"},
+  {"taxon": "Viridiplantae", "label": "Plants"},
+  {"taxon": "Eukaryota", "label": "Other eukaryotes"}
 ]

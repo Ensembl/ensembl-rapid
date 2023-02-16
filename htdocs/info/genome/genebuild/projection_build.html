@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Mapping Annotation from a Reference</title>
+</head>
+
+<body>
+
+<h1>Mapping Annotation from a Reference</h1>
+
+<p>Ensembl annotation of the human assemblies has been produced via a new mapping pipeline:</p>
+
+<ol>
+<li>A subset of the <a href="https://www.gencodegenes.org/human/release_38.html">GENCODE 38</a> genes and transcripts have been annotated on each of the haploid assemblies. The subset excludes readthrough genes and genes on patches or haplotypes.</li>
+
+<li>For each gene, anchor sequences built from the surrounding region were used to locate the most likely corresponding region(s) in the target genome. A pairwise alignment of the reference and target regions was then carried out and used to map the exon coordinates and other features of the gene.</li>
+
+<li>In addition to the primary mapping, potential recent duplications and collapsed paralogues were identified by aligning canonical transcripts across the entire genome and searching for new mappings that did not overlap existing annotations.</li>
+</ol>
+
+<p>For more details on the annotation process, please refer to the <a href="https://www.biorxiv.org/content/10.1101/2022.07.09.499321v1">preprint publication</a> (see “Methods” section: “Ensembl Mapping Pipeline for Assembly Annotation”).</p> 
+
+
+</body>
+</html>
