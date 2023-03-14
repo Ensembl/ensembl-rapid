@@ -1,3 +1,4 @@
+bemisia_tabaci_gca918797505v1cm
 fragum_fragum_gca946902895v1
 orius_laevigatus_gca018703685v1
 spodoptera_exigua_gca902829305v1
