@@ -40,7 +40,10 @@ sub format_ftp_url {
   elsif ($link_type eq 'rnaseq') {
     $url .= '/rnaseq/';
   }
-  else {
+  elsif ($link_type eq 'homology') {
+    $url .= '/homology/';
+  }
+  elsif ($link_type eq 'genome') {
     $url .= '/genome/';
   }
 

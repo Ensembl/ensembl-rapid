@@ -111,10 +111,11 @@ sub render {
     }
 
     my $annotation  = sprintf('<a rel="external" href="%s">FASTA/GTF/GFF3/TSV</a>', format_ftp_url($hub, $dir, 'geneset'));
-    my $genome      = sprintf('<a rel="external" href="%s">FASTA</a>', format_ftp_url($hub, $dir));
+    my $genome      = sprintf('<a rel="external" href="%s">FASTA</a>', format_ftp_url($hub, $dir, 'genome'));
     my $rnaseq      = $databases->{'DATABASE_RNASEQ'} 
                         ? sprintf('<a rel="external" href="%s">BAM</a>', format_ftp_url($hub, $dir, 'rnaseq'))
                         : '';
+    my $homology    = sprintf('<a rel="external" href="%s">TSV</a>', format_ftp_url($hub, $dir, 'homology'));
 
     $table->add_row({
       'species'     => sprintf('<a href="%s%s/"><img src="/i/species/%s.png" alt="%s" class="badge-48" style="float:left;padding-right:4px" /></a>%s',
@@ -131,6 +132,7 @@ sub render {
       'annotation'  => $annotation,
       'genome'      => $genome,
       'rnaseq'      => $rnaseq,
+      'homology'    => $homology
     });
 
   }
@@ -144,19 +146,20 @@ sub table_columns {
   my $sd = $self->hub->species_defs; 
 
   my $columns = [
-      { key => 'species',     title => 'Scientific name',       width => '25%', align => 'left', sort => 'string' },
-      { key => 'is_new',     title => 'New',                    width => '5%', align => 'left', sort => 'string' },
-      { key => 'common',      title => 'Common name',           width => '15%', align => 'left', sort => 'html'},
-      { key => 'clade',       title => 'Clade',                 width => '5%', align => 'left', sort => 'html' },
-      { key => 'taxon_id',    title => 'Taxon ID',              width => '5%', align => 'left', sort => 'numeric', 'hidden' => 1 }, 
-      { key => 'assembly',    title => 'Assembly name',      width => '5%', align => 'left', 'hidden' => 1  },
-      { key => 'accession',   title => 'Accession',             width => '5%', align => 'left' },
-      { key => 'size',        title => 'Genome size (bps)',     width => '5%', align => 'left', sort => 'numeric', 'hidden' => 1  },
-      { key => 'provider',    title => 'Annotation provider',   width => '10%', align => 'left' },
+      { key => 'species',     title => 'Scientific name',     width => '25%', align => 'left', sort => 'string' },
+      { key => 'is_new',     title => 'New',                  width => '5%', align => 'left', sort => 'string' },
+      { key => 'common',      title => 'Common name',         width => '15%', align => 'left', sort => 'html'},
+      { key => 'clade',       title => 'Clade',               width => '5%', align => 'left', sort => 'html' },
+      { key => 'taxon_id',    title => 'Taxon ID',            width => '5%', align => 'left', sort => 'numeric', 'hidden' => 1 },
+      { key => 'assembly',    title => 'Assembly name',       width => '5%', align => 'left', 'hidden' => 1  },
+      { key => 'accession',   title => 'Accession',           width => '5%', align => 'left' },
+      { key => 'size',        title => 'Genome size (bps)',   width => '5%', align => 'left', sort => 'numeric', 'hidden' => 1  },
+      { key => 'provider',    title => 'Annotation provider', width => '10%', align => 'left' },
       { key => 'method',      title => 'Annotation method',   width => '10%', align => 'left' },
-      { key => 'annotation',  title => 'Annotation',            width => '5%', align => 'left' },
-      { key => 'genome',      title => 'Genome',                width => '5%', align => 'left' },
-      { key => 'rnaseq',      title => 'RNA Seq',               width => '5%', align => 'left', 'hidden' => 1 },
+      { key => 'annotation',  title => 'Annotation',          width => '5%', align => 'left' },
+      { key => 'genome',      title => 'Genome',              width => '5%', align => 'left' },
+      { key => 'homology',    title => 'Homology',            width => '5%', align => 'left' },
+      { key => 'rnaseq',      title => 'RNA Seq',             width => '5%', align => 'left', 'hidden' => 1 },
   ];
 
   return $columns;
