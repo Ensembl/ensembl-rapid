@@ -95,6 +95,40 @@
       "use_seq_region_synonyms": 0,
       "use_vcf_consequences": 1,
       "filename_template" : "/nfs/public/release/ensweb-data/data_files/rapid/homo_sapiens_gca009914755v4/T2T-CHM13v2.0/variation/Homo_sapiens-GCA_009914755.4-2022_10-GWAS.vcf.gz"
-   	}
+   	},
+   	{
+      "id": "1000Genomes_Recalled",
+      "description": "1000 Genomes Phase 3 variants recalled on the T2T-CHM13v2.0 genome",
+      "species": "Homo_sapiens_GCA_009914755.4",
+      "assembly": "T2T-CHM13v2.0",
+      "type": "local",
+      "use_as_source" : 1,
+      "use_seq_region_synonyms": 0,
+      "use_vcf_consequences": 1,
+      "filename_template" : "/nfs/public/release/ensweb-data/data_files/rapid/homo_sapiens_gca009914755v4/T2T-CHM13v2.0/variation/Homo_sapiens-GCA_009914755.4-2022_10-1000Genomes_chr###CHR###.vcf.gz",
+      "chromosomes": ["X", "Y"],
+      "sample_prefix": "1000GENOMES:phase_3:",
+      "population_display_group": {
+        "display_group_name": "1000GENOMES:",
+        "display_group_priority": 1
+      }
+    },
+   	{
+      "id": "SGDP_Recalled",
+      "description": "Simons Genome Diversity Project variants recalled on the T2T-CHM13v2.0 genome",
+      "species": "Homo_sapiens_GCA_009914755.4",
+      "assembly": "T2T-CHM13v2.0",
+      "type": "local",
+      "use_as_source" : 1,
+      "use_seq_region_synonyms": 0,
+      "use_vcf_consequences": 1,
+      "filename_template" : "/nfs/public/release/ensweb-data/data_files/rapid/homo_sapiens_gca009914755v4/T2T-CHM13v2.0/variation/Homo_sapiens-GCA_009914755.4-2022_10-SGDPrecalled_chr###CHR###.vcf.gz",
+      "chromosomes": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "X", "Y"],
+      "sample_prefix": "SGDP:",
+      "population_display_group": {
+        "display_group_name": "SimonsGenomeDiversityProject:",
+        "display_group_priority": 2
+      }
+    }
   ]
 }
