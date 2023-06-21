@@ -41,6 +41,7 @@ sub init_cacheable {
   if ($hide_gnomADg_track) {
     ## Turn off gnomADg track
     $self->modify_configs(['variation_vcf_gnomADg'], {'display' => 'off'});
+    $self->modify_configs(['variation_vcf_dbSNP155'], {'display' => 'off'});
   }
 }
 
